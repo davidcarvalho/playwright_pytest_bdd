@@ -17,6 +17,10 @@ def pytest_addoption(parser):
     parser.addoption('--expected-url', default='https://www.iana.org/domains')
 
 
+def pytest_html_report_title(report):
+    report.title = "BDD Framework Report!"
+
+
 @pytest.fixture
 def menu_item(request):
     return request.config.getoption('--menu-item')
