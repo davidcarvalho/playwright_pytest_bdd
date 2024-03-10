@@ -2,6 +2,7 @@ import pytest
 
 from pathlib import Path
 
+
 def pytest_runtest_makereport(item, call) -> None:
     if call.when == "call":
         if call.excinfo is not None and "page" in item.funcargs:
@@ -9,6 +10,7 @@ def pytest_runtest_makereport(item, call) -> None:
             screenshot_dir = Path(".playwright-screenshots")
             screenshot_dir.mkdir(exist_ok=True)
             page.screenshot(path=str(screenshot_dir / f"screenshot.png"))
+
 
 def pytest_addoption(parser):
     parser.addoption('--menu-item', default='domains')

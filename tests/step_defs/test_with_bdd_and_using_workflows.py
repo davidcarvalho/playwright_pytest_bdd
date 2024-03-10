@@ -3,7 +3,7 @@ from pages.ican_navigation import IcanNavigationMenu
 from pytest_bdd import scenario, given, when, then
 
 
-@scenario('tests.feature', 'user can navigate to the ican page')
+@scenario('../features/tests.feature', 'user can navigate to the ican page')
 def test_user_can_navigate_to_each_link():
     print('starting bdd test')
 
