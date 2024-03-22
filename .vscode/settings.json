@@ -1,0 +1,33 @@
+{
+    "cucumberautocomplete.steps": [
+        "tests/step_defs/*.py"
+    ],
+    "cucumberautocomplete.syncfeatures": "tests/features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.pages": {
+        "users": "tests/features/*.feature",
+        "pathes": "tests/features/*.feature",
+        "main": "tests/features/*.feature"
+    },
+    "cucumberautocomplete.skipDocStringsFormat": true,
+    "cucumberautocomplete.formatConfOverride": {
+        "And": 3,
+        "But": "relative"
+    },
+    "cucumberautocomplete.onTypeFormat": true,
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    },
+    "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+    "cucumberautocomplete.stepRegExSymbol": "'",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
